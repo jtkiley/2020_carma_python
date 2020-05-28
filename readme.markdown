@@ -70,7 +70,7 @@ If you encounter issues, get as far as you can, and we will work through them in
 1. (experts-only alternative) Install miniconda instead of the GUI version. While there are direct download versions, you would typically use a package manager (e.g., brew on macOS, apt on Ubuntu). Similarly, you could install VS Code with your package manager as well.
 
 
-### Importing the Anaconda environment.
+### Importing the Anaconda environment
 
 1. Open the Anaconda Navigator app.
 1. On the left, click Environment.
@@ -99,12 +99,27 @@ jupyter labextension install @jupyter-widgets/jupyterlab-manager plotlywidget@4.
 **Note:** On my desktop, each command listed above takes between two and three minutes to complete, so give it time. For your reference, these instructions are adapted from the [plot.ly getting started](https://plot.ly/python/getting-started/) document.
 
 
-### Install TextBlob text corpora and spacy word models.
+### Install TextBlob text corpora and spacy word models
 
 1. Open a terminal (on Windows, use the prompt labeled either "Anaconda Prompt" or "Anaconda (64-bit)" in the start menu).
 1. Activate the `carmapy` environment using the command `conda activate carmapy`.
 1. Install the corpora using the command `python -m textblob.download_corpora`. There may be warnings or errors that are not relevant for our purposes, but you should see a series of successful downloads.
 1. Install the spacy English models using the command `python -m spacy download en_core_web_lg`.
+
+
+### (optional) Run intro notebook
+
+You can run the notebook that we will use in the first session as a test of whether the most important packages are working properly.
+
+
+1. Open Anaconda Navigator.
+1. Near the upper left of the main part of the window, find the control labeled "Applications on" followed by a drop down box (usually containing "base (root)").
+1. Click the dropdown and select `carmapy` which the environment you installed in the instructions.
+1. After a few seconds, the main window will refresh. Then, find "Jupyter Lab" and click the "Launch" button.
+1. A browser window will pop up, and the Jupyter Lab interface will load. Note: if you appear to have a blank page, make sure you are using a modern browser like Safari, Chrome, or Firefox as your default. Older versions of Microsoft's browsers (even on Windows 10) lack modern features, though the newest Microsoft Edge browser should be fine.
+1. On the left side of the Jupyter Lab interface, use the file browser to navigate to the location where you saved the `0a_intro.ipynb` notebook and double click it. Note: if you are using the Dropbox version, the folder is read only, so you should copy the files somewhere convenient.
+1. Once it loads, click the "Kernel" menu in the menu bar (inside the Jupyter Lab interface), and then click "Restart Kernel and Run All Cells..."
+1. The notebook should run quickly, and you should not see errors. Note: the single most common issue with any import errors at the top is that you have not selected the environment in step 3 above. You need to do that before launching Jupyter Lab, and a subsequent change will not affect the already--running Jupyter Lab.
 
 
 ## About Jason
