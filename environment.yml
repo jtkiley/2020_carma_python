@@ -20,7 +20,7 @@ dependencies:
   - scikit-learn=0.22.1
   - spacy=2.2.4
   - statsmodels>=0.10
-  - tensorflow>=2.0
+  - tensorflow=2.0
   - textblob=0.15.3
   - pip:
     - linearmodels==4.15.4
